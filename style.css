@@ -35,9 +35,9 @@ body {
 .collage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* Increase gap to separate images more */
+    gap: 15px; /* Reduce gap slightly */
     margin-top: 20px;
-    max-width: 600px; /* Increase max width to spread out images */
+    max-width: 450px; /* Reduce max width to fit more compactly */
 }
 
 .collage-image {
@@ -45,7 +45,10 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 150px; /* Set a max height to prevent images from being too large */
+    object-fit: cover; /* Ensures the images don’t get cut off */
 }
+
 
 
 .confetti-container {
